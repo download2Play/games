@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <noscript
+      ><meta
+        http-equiv="refresh"
+        content="0;url=https://og.download2play.com/noscript"
+    /></noscript>
+    <script type="text/javascript">
+      var ogblock = true;
+    </script>
+    <script
+      type="text/javascript"
+      id="ogjs"
+      src="https://og.download2play.com/cl/js/99wdkg"
+    ></script>
+    <script type="text/javascript">
+      if (ogblock)
+        window.location.href = 'https://og.download2play.com/adblock';
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gaming World</title>
@@ -307,6 +325,7 @@
           if (stepIndex === steps.length) {
             clearInterval(interval);
             progressBar.style.backgroundColor = '#4caf50'; // Change progress bar color when download completes
+            og_load();
           }
         }, 1000);
       }
