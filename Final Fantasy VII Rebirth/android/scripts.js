@@ -277,7 +277,7 @@ var ogblock = false;
 var contentTitle = document.querySelector('.main-title');
 contentTitle.textContent = WEB_TITLE;
 
-//GAME LOGO0
+//GAME LOGO09
 var logoContainer = document.querySelector('.logo-container');
 var logoImage = document.createElement('img');
 logoImage.src = GAME_LOGO; // Set the image source
