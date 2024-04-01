@@ -28,6 +28,7 @@
         max-width: 200px;
         border-radius: 50%;
         box-shadow: 0 0 20px rgba(255, 87, 34, 0.8);
+        background-color: #f0fff0;
       }
       /* Heading styles */
       h1 {
