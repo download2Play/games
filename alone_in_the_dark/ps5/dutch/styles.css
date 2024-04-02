@@ -1,0 +1,237 @@
+/* Reset CSS */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* Body styles */
+      body {
+        font-family: Arial, sans-serif;
+        background: var(--background-url) center/cover no-repeat fixed;
+        color: #fff;
+        
+      }
+      
+      /* Container styles */
+      .container {
+        max-width: 90%;
+        margin: 0 auto;
+        margin-top: 100px;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      }
+      /* Logo styles */
+      .logo {
+        max-width: 200px;
+        border-radius: 50%;
+        box-shadow: 0 0 20px rgba(255, 87, 34, 0.8);
+        background-color: #f0fff0;
+      }
+      /* Heading styles */
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+      }
+      /* Text styles */
+      p {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+      }
+      /* Progress bar styles */
+      .progress {
+        background-color: #555;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        position: relative;
+        height: 20px;
+        overflow: hidden;
+      }
+      .progress-bar {
+        background-color: #ff5722;
+        border-radius: 20px;
+        height: 100%;
+        width: 0;
+        transition: width 0.5s ease-in-out;
+      }
+      /* Step indicator styles */
+      .step-indicator {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        color: #fff;
+        font-weight: bold;
+        padding: 5px 10px;
+      }
+      /* Download button styles */
+      .download-button {
+        display: inline-block;
+        background-color: #ff5722;
+        color: #fff;
+        font-size: 1.2rem;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        outline: none;
+      }
+      .download-button:hover {
+        background-color: #ff6d42;
+      }
+      /* Notification styles */
+      .notification {
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(255, 255, 255, 0.9);
+        color: #333;
+        padding: 10px 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        display: none;
+        z-index: 999; /* Ensure notification is on top */
+      }
+      /* Information styles */
+      .info {
+        font-size: 1rem;
+        margin-top: 20px;
+      }
+      /* Speed indicator styles */
+      .speed-indicator {
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        padding: 5px;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #333;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+      /* Chat container styles */
+      .chat-container {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 999; /* Ensure it's above other content */
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+      /* Chat messages styles */
+      .chat-messages {
+        max-height: 200px;
+        overflow-y: auto;
+        color: #ff5722;
+      }
+      /* Chat input styles */
+      .chat-input {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+      }
+      .chat-input input[type='text'] {
+        flex: 1;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-right: 10px;
+      }
+      .chat-input button {
+        padding: 8px 15px;
+        border: none;
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      /* Comment section styles */
+      .comments {
+        margin-top: 40px;
+        text-align: left;
+        padding: 20px;
+        background-color: rgba (255, 255, 255, 0.1);
+        border-radius: 10px;
+        max-height: 200px;
+        overflow-y: auto; /* Enable vertical scrolling */
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+      }
+      .comment {
+        margin-bottom: 20px;
+      }
+      .comment .username {
+        font-weight: bold;
+        color: #ff5722;
+      }
+      .comment .text {
+        margin-top: 5px;
+      }
+      .comment-avatar img {
+        border-radius: 50%;
+        width: 50px; /* Adjust the size of the avatar */
+        height: 50px; /* Adjust the size of the avatar */
+      }
+      /* Media queries for responsiveness */
+      @media only screen and (max-width: 600px) {
+        .container {
+          padding: 10px;
+        }
+        .logo {
+          max-width: 150px;
+        }
+        h1 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+        .download-button {
+          font-size: 1rem;
+          padding: 10px 20px;
+        }
+        .notification {
+          font-size: 0.8rem;
+          padding: 8px 16px;
+        }
+        .info {
+          font-size: 0.8rem;
+        }
+        .speed-indicator {
+          bottom: -20px;
+          padding: 3px;
+          font-size: 0.8rem;
+        }
+        .comments {
+          max-height: 150px;
+        }
+        .comment .username {
+          font-size: 0.9rem;
+        }
+        .comment .text {
+          font-size: 0.9rem;
+        }
+        .comment-avatar img {
+          border-radius: 50%;
+          width: 40px; /* Adjust the size of the avatar for smaller screens */
+          height: 40px; /* Adjust the size of the avatar for smaller screens */
+        }
+        .comments {
+          margin-top: 20px; /* Add some space between comments and chat on mobile */
+        }
+
+        .chat-container {
+          position: relative; /* Position relative for normal flow */
+          margin-top: 50px; /* Add space between comments and chat */
+          margin-left: 30px;
+        }
+      }

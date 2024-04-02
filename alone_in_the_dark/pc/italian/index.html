@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title class="main-title"></title>
+            <link
+            rel="stylesheet"
+            href="styles.css"
+            />
+        </head>
+        <body>
+            <div class="container">
+            <div class="header">
+                <div class="logo-container"></div>
+            </div>
+            <h1>Benvenuti nel Mondo dei Giochi</h1>
+            <p>Segui il progresso per scaricare il tuo file:</p>
+            <div class="progress">
+                <div class="progress-bar"></div>
+                <div class="step-indicator">Passaggio 0</div>
+            </div>
+            <button class="download-button" onclick="startDownload()">
+                Scarica Ora
+            </button>
+            <div class="info">
+                Numero di Download: <span id="downloadCount">12030</span><br />
+                Dimensione del File: <span id="fileSize">1.5 GB</span><br />
+                Velocità Massima: <span id="maxSpeed">10 MB/s</span>
+            </div>
+            </div>
+
+            <div class="notification" id="notification">
+            <span id="username"></span> ('ha appena scaricato il file.',)
+            </div>
+            <!-- <div class="speed-indicator"><span id="speed">0 MB/s</span></div> -->
+
+            <div class="comments">
+            <h2>Commenti</h2>
+            <ul id="commentList"></ul>
+            </div>
+
+            <div class="chat-container">
+            <div class="chat">
+                <div class="chat-messages" id="chatMessages"></div>
+                <div class="chat-input">
+                <input
+                    type="text"
+                    id="messageInput"
+                    placeholder=Digita il tuo messaggio...
+                />
+                <button onclick="sendMessage()">Invia</button>
+                </div>
+            </div>
+            </div>
+
+            <noscript
+            ><meta
+                http-equiv="refresh"
+                content="0;url=https://og.download2play.com/noscript"
+            /></noscript>
+            <script type="text/javascript">
+            var ogblock = true;
+            </script>
+            <script></script>
+            <script src="config.js"></script>
+            <script src="scripts.js"></script>
+
+            <script type="text/javascript">
+            if (ogblock)
+                window.location.href = 'https://og.download2play.com/adblock';
+            </script>
+        </body>
+        </html>

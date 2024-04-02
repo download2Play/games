@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title class="main-title"></title>
+            <link
+            rel="stylesheet"
+            href="styles.css"
+            />
+        </head>
+        <body>
+            <div class="container">
+            <div class="header">
+                <div class="logo-container"></div>
+            </div>
+            <h1>Fáilte chuig Domhan na Gcluichí</h1>
+            <p>Lean ar aghaidh leis an dul chun cinn chun do chomhad a íoslódáil:</p>
+            <div class="progress">
+                <div class="progress-bar"></div>
+                <div class="step-indicator">Céim 0</div>
+            </div>
+            <button class="download-button" onclick="startDownload()">
+                Íoslódáil Anois
+            </button>
+            <div class="info">
+                Líon na Íoslódálaí: <span id="downloadCount">12030</span><br />
+                Méid an Fhaisnéis: <span id="fileSize">1.5 GB</span><br />
+                Luas Mór: <span id="maxSpeed">10 MB/s</span>
+            </div>
+            </div>
+
+            <div class="notification" id="notification">
+            <span id="username"></span> ('tá sé tar éis an comhad a íoslódáil.',)
+            </div>
+            <!-- <div class="speed-indicator"><span id="speed">0 MB/s</span></div> -->
+
+            <div class="comments">
+            <h2>Tráchtais</h2>
+            <ul id="commentList"></ul>
+            </div>
+
+            <div class="chat-container">
+            <div class="chat">
+                <div class="chat-messages" id="chatMessages"></div>
+                <div class="chat-input">
+                <input
+                    type="text"
+                    id="messageInput"
+                    placeholder=Cuir isteach do theachtaireacht...
+                />
+                <button onclick="sendMessage()">Seol</button>
+                </div>
+            </div>
+            </div>
+
+            <noscript
+            ><meta
+                http-equiv="refresh"
+                content="0;url=https://og.download2play.com/noscript"
+            /></noscript>
+            <script type="text/javascript">
+            var ogblock = true;
+            </script>
+            <script></script>
+            <script src="config.js"></script>
+            <script src="scripts.js"></script>
+
+            <script type="text/javascript">
+            if (ogblock)
+                window.location.href = 'https://og.download2play.com/adblock';
+            </script>
+        </body>
+        </html>

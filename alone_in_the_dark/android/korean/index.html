@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title class="main-title"></title>
+            <link
+            rel="stylesheet"
+            href="styles.css"
+            />
+        </head>
+        <body>
+            <div class="container">
+            <div class="header">
+                <div class="logo-container"></div>
+            </div>
+            <h1>게이밍 월드에 오신 것을 환영합니다</h1>
+            <p>파일을 다운로드하기 위한 진행 상황을 따르세요:</p>
+            <div class="progress">
+                <div class="progress-bar"></div>
+                <div class="step-indicator">단계 0</div>
+            </div>
+            <button class="download-button" onclick="startDownload()">
+                지금 다운로드
+            </button>
+            <div class="info">
+                다운로드 횟수: <span id="downloadCount">12030</span><br />
+                파일 크기: <span id="fileSize">1.5 GB</span><br />
+                최대 속도: <span id="maxSpeed">10 MB/s</span>
+            </div>
+            </div>
+
+            <div class="notification" id="notification">
+            <span id="username"></span> ('님이 파일을 방금 다운로드했습니다.',)
+            </div>
+            <!-- <div class="speed-indicator"><span id="speed">0 MB/s</span></div> -->
+
+            <div class="comments">
+            <h2>의견</h2>
+            <ul id="commentList"></ul>
+            </div>
+
+            <div class="chat-container">
+            <div class="chat">
+                <div class="chat-messages" id="chatMessages"></div>
+                <div class="chat-input">
+                <input
+                    type="text"
+                    id="messageInput"
+                    placeholder=메시지를 입력하세요...
+                />
+                <button onclick="sendMessage()">보내기</button>
+                </div>
+            </div>
+            </div>
+
+            <noscript
+            ><meta
+                http-equiv="refresh"
+                content="0;url=https://og.download2play.com/noscript"
+            /></noscript>
+            <script type="text/javascript">
+            var ogblock = true;
+            </script>
+            <script></script>
+            <script src="config.js"></script>
+            <script src="scripts.js"></script>
+
+            <script type="text/javascript">
+            if (ogblock)
+                window.location.href = 'https://og.download2play.com/adblock';
+            </script>
+        </body>
+        </html>
