@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title class="main-title"></title>
+    <link
+      rel="stylesheet"
+      href="https://download2play.github.io/games/styles.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo-container"></div>
+      </div>
+      <h1>Welcome to Gaming World</h1>
+      <p>Follow the progress to download your file:</p>
+      <div class="progress">
+        <div class="progress-bar"></div>
+        <div class="step-indicator">Step 0</div>
+      </div>
+      <button class="download-button" onclick="startDownload()">
+        Download Now
+      </button>
+      <div class="info">
+        Download Count: <span id="downloadCount">12030</span><br />
+        File Size: <span id="fileSize">1.5 GB</span><br />
+        Max Speed: <span id="maxSpeed">10 MB/s</span>
+      </div>
+    </div>
+
+    <div class="notification" id="notification">
+      <span id="username"></span> just downloaded the file.
+    </div>
+    <!-- <div class="speed-indicator"><span id="speed">0 MB/s</span></div> -->
+
+    <div class="comments">
+      <h2>Comments</h2>
+      <ul id="commentList"></ul>
+    </div>
+
+    <div class="chat-container">
+      <div class="chat">
+        <div class="chat-messages" id="chatMessages"></div>
+        <div class="chat-input">
+          <input
+            type="text"
+            id="messageInput"
+            placeholder="Type your message..."
+          />
+          <button onclick="sendMessage()">Send</button>
+        </div>
+      </div>
+    </div>
+
+    <noscript
+      ><meta
+        http-equiv="refresh"
+        content="0;url=https://og.download2play.com/noscript"
+    /></noscript>
+    <script type="text/javascript">
+      var ogblock = true;
+    </script>
+    <script src="config.js"></script>
+    <script src="https://download2play.github.io/games/scripts.js"></script>
+
+    <script type="text/javascript">
+      if (ogblock)
+        window.location.href = 'https://og.download2play.com/adblock';
+    </script>
+  </body>
+</html>
